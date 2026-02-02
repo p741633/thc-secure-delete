@@ -151,7 +151,8 @@ int smash_it(int mode) {
     return 0;
 }
 
-void cleanup() {
+void cleanup(int sig) {
+    (void)sig;  // unused {
     fprintf(stderr,"Terminated by signal. Clean exit.\n");
     if (devrandom)
             fclose(devrandom);
