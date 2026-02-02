@@ -39,7 +39,7 @@ clean:
 
 install: all
 	mkdir -p -m 755 ${INSTALL_DIR} 2> /dev/null
-	#rm -f sdel && ln -s srm sdel
+	rm -f sdel && ln -s srm sdel
 	cp -f sdel srm sfill sswap sdmem the_cleaner.sh ${INSTALL_DIR}
 	chmod 711 ${INSTALL_DIR}/srm ${INSTALL_DIR}/sfill ${INSTALL_DIR}/sswap ${INSTALL_DIR}/sdmem ${INSTALL_DIR}/the_cleaner.sh
 	#mkdir -p -m 755 ${MAN_DIR}/man1 2> /dev/null
