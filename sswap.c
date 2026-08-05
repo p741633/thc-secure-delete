@@ -64,7 +64,7 @@ void help() {
 }
 
 void cleanup(int sig) {
-    (void)sig;  // unused {
+    (void)sig;  // unused
     fprintf(stderr,"\nTerminated by signal. Clean exit.\n");
     close(fd);
     sync();
